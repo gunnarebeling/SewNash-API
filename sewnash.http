@@ -4,3 +4,4 @@ GET {{sewnash_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+@no-ssl-verify

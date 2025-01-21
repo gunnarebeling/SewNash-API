@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gunnarebeling/workspace/csharp/SewNash-api/sewnash.csproj": {}
+    "/Users/gunnarebeling/workspace/SewNash-API/sewnash.csproj": {}
   },
   "projects": {
-    "/Users/gunnarebeling/workspace/csharp/SewNash-api/sewnash.csproj": {
+    "/Users/gunnarebeling/workspace/SewNash-API/sewnash.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gunnarebeling/workspace/csharp/SewNash-api/sewnash.csproj",
+        "projectUniqueName": "/Users/gunnarebeling/workspace/SewNash-API/sewnash.csproj",
         "projectName": "sewnash",
-        "projectPath": "/Users/gunnarebeling/workspace/csharp/SewNash-api/sewnash.csproj",
+        "projectPath": "/Users/gunnarebeling/workspace/SewNash-API/sewnash.csproj",
         "packagesPath": "/Users/gunnarebeling/.nuget/packages/",
-        "outputPath": "/Users/gunnarebeling/workspace/csharp/SewNash-api/obj/",
+        "outputPath": "/Users/gunnarebeling/workspace/SewNash-API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gunnarebeling/.nuget/NuGet/NuGet.Config"

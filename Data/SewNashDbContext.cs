@@ -18,6 +18,7 @@ public class SewNashDbContext : IdentityDbContext<IdentityUser>
     public DbSet<SewClass> SewClasses {get; set;}
     public DbSet<Photo> Photos { get; set; }
     
+    
 
     public SewNashDbContext(DbContextOptions<SewNashDbContext> context, IConfiguration config) : base(context)
     {
@@ -40,7 +41,7 @@ public class SewNashDbContext : IdentityDbContext<IdentityUser>
             Id = "dbc40bc6-0829-4ac5-a3ed-180f5e916a5f",
             UserName = "Administrator",
             Email = "admina@strator.comx",
-            PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(null, _configuration["AdminPassword"])
+            PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(null, Environment.GetEnvironmentVariable("AdminPassword"))
         });
 
         modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
@@ -63,7 +64,7 @@ public class SewNashDbContext : IdentityDbContext<IdentityUser>
             Id = "a4b9c99e-87ab-4c5a-9d53-1e3f5248a1b0", // Unique GUID for this user
             UserName = "JohnDoe",
             Email = "johndoe@example.com",
-            PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(null, _configuration["JohnDoePassword"]) // Store password securely
+            PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(null, Environment.GetEnvironmentVariable("AdminPassword")) // Store password securely
         });
 
         // Seeding the Employee entity for the non-admin user

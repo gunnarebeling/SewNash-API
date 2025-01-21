@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qeg1/JjeHtTOLd/M2m7WSU8bakIkQtiVqiWIYN7G6AvVH4fWRqJZjHMcPm9dgh2XdOt1/O1Zq/KTdRpQEzRlSg==",
+  "dgSpecHash": "pDhtoUxgDMiuC+0hT3Pmkrgj4RXMG/5pGL32dolpC3llgbHNwYrT6HKNuLb8AG83GwJADOEwsbODor5K/Vgw2A==",
   "success": true,
-  "projectFilePath": "/Users/gunnarebeling/workspace/csharp/SewNash-api/sewnash.csproj",
+  "projectFilePath": "/Users/gunnarebeling/workspace/SewNash-API/sewnash.csproj",
   "expectedPackageFiles": [
     "/Users/gunnarebeling/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/gunnarebeling/.nuget/packages/awssdk.core/3.7.400.72/awssdk.core.3.7.400.72.nupkg.sha512",

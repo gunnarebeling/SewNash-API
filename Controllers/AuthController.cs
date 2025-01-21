@@ -63,9 +63,18 @@ public class AuthController : ControllerBase
 
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-                HttpContext.SignInAsync(
+                 HttpContext.SignInAsync(
                 CookieAuthenticationDefaults.AuthenticationScheme,
-                new ClaimsPrincipal(claimsIdentity)).Wait();
+                new ClaimsPrincipal(claimsIdentity),
+                new AuthenticationProperties
+                {
+                    IsPersistent = true,
+                    ExpiresUtc = DateTimeOffset.UtcNow.AddDays(7),
+                    AllowRefresh = true,
+                    IssuedUtc = DateTimeOffset.UtcNow,
+                    RedirectUri = "http://sewnash-app.s3-website-us-east-1.amazonaws.com",
+                    Items = { { "SameSite", "None" }, { "Secure", "true" } }
+                }).Wait();
 
                 return Ok();
             }
